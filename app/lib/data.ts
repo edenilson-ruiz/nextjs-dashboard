@@ -157,7 +157,7 @@ export async function fetchInvoiceById(id: string) {
     const data = await sql<InvoiceForm>`
       SELECT
         invoices.id,
-        invoices.customer_id,totalPages
+        invoices.customer_id,
         invoices.amount,
         invoices.status
       FROM invoices
